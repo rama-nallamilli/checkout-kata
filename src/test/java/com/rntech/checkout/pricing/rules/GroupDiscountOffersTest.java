@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class GroupDiscountOffersTest {
 
   @Test
-  void threeFor130_shouldNotGiveDiscountForTwo() {
+  void threeFor130_shouldNotGiveDiscount() {
     Integer unitPrice = 50;
     PricingRule rule = GroupDiscountOffers.threeFor130;
 
@@ -17,7 +17,7 @@ class GroupDiscountOffersTest {
   }
 
   @Test
-  void threeFor130_shouldGiveDiscountForThree() {
+  void threeFor130_shouldGiveDiscount() {
     Integer unitPrice = 50;
     PricingRule rule = GroupDiscountOffers.threeFor130;
 
@@ -26,7 +26,7 @@ class GroupDiscountOffersTest {
   }
 
   @Test
-  void threeFor130_shouldGiveDiscountForTen() {
+  void threeFor130_shouldGiveDiscountAndFullPrice() {
     Integer unitPrice = 50;
     PricingRule rule = GroupDiscountOffers.threeFor130;
 
@@ -45,7 +45,7 @@ class GroupDiscountOffersTest {
 
 
   @Test
-  void twoFor45_shouldNotGiveDiscountForOne() {
+  void twoFor45_shouldNotGiveDiscount() {
     Integer unitPrice = 30;
     PricingRule rule = GroupDiscountOffers.twoFor45;
 
@@ -54,7 +54,7 @@ class GroupDiscountOffersTest {
   }
 
   @Test
-  void twoFor45_shouldGiveDiscountForTwo() {
+  void twoFor45_shouldGiveDiscount() {
     Integer unitPrice = 30;
     PricingRule rule = GroupDiscountOffers.twoFor45;
 
@@ -63,7 +63,7 @@ class GroupDiscountOffersTest {
   }
 
   @Test
-  void twoFor45_shouldGiveDiscountForNine() {
+  void twoFor45_shouldGiveDiscountAndFullPrice() {
     Integer unitPrice = 30;
     PricingRule rule = GroupDiscountOffers.twoFor45;
 
