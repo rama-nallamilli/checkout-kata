@@ -10,7 +10,6 @@ public class ItemPrice {
   private final Integer unitPriceInPence;
   private final PricingRule pricingRule;
 
-
   public ItemPrice(Integer unitPriceInPence, PricingRule pricingRule) {
     this.unitPriceInPence = unitPriceInPence;
     this.pricingRule = pricingRule;

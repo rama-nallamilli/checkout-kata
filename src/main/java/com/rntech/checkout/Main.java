@@ -16,7 +16,6 @@ public class Main {
 
   public static void main(String[] args) {
 
-
     final PricingRule noDiscountPricingRule = (unitPriceInPence, numOrdered) -> unitPriceInPence * numOrdered;
     final Checkout checkout = new Checkout(noDiscountPricingRule);
 
