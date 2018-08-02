@@ -20,3 +20,4 @@ Some assumptions/considerations:
 * All prices in pence and Integer is big enough for our use case (no overflow)
 * SKU was wrapped so type can easily be changed, Char would have worked but opted for String
 * Functional style where appropriate
+* Omitted javadoc
